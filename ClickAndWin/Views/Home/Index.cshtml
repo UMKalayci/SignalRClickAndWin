@@ -1,0 +1,32 @@
+﻿@model AgModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first mb-2">
+            <h4>Oyuna Gir</h4>
+        </div>
+
+        <!-- Login Form -->
+        <form name="form" asp-action="AgaBaglan">
+            <input asp-for="AgAdi" type="text" class="fadeIn second" placeholder="Ağ adını giriniz.">
+            <div>
+                <button name="AgaBaglan" type="submit" class="btn btn-primary col-md-9 mb-2">
+                    Ağa Bağlan
+                </button>
+            </div>
+        </form>
+        <form name="form" asp-action="AgOlustur">
+            <input asp-for="AgAdi" type="text" class="fadeIn second" placeholder="Ağ adını giriniz.">
+            <div>
+                <button name="AgOlustur" type="submit" class="btn btn-primary col-md-9 mb-2">
+                    Yeni Ağ Oluştur
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
